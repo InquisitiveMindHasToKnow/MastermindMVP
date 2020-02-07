@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">MastermindMVP</string>
+    <string name="mastermind_header_text">Mastermind</string>
+    <string name="greeting_text">Good night, </string>
+    <string name="play_now_button_text">Play Now</string>
+    <string name="game_rules_text">Instructions</string>
+
+    <string name="good_morning">Good morning, </string>
+    <string name="good_afternoon">Good afternoon, </string>
+    <string name="good_evening">Good evening, </string>
+    <string name="good_night">Good night, </string>
+    <string name="guess_hint">_ _ _ _</string>
+    <string name="button_six_text">6</string>
+    <string name="button_zero_text">0</string>
+    <string name="button_one_text">1</string>
+    <string name="button_two_text">2</string>
+    <string name="button_three_text">3</string>
+    <string name="button_four_text">4</string>
+    <string name="button_five_text">5</string>
+    <string name="button_seven_text">7</string>
+    <string name="delete_button_text">Del</string>
+    <string name="guess_button_text">Guess</string>
+    <string name="reset_button_text">Reset</string>
+
+    <string name="you_won_text"><font fgcolor="#5CB5B5">You won! Bart is saved!</font></string>
+    <string name="you_lost_text"><font fgcolor="#F44336">You lost! Poor Bart!</font></string>
+
+    <string name="partially_correct"><font fgcolor="#F0810F">Partially correct.</font></string>
+    <string name="correct"><font fgcolor="#5CB5B5">Correct!</font></string>
+    <string name="incorrect"><font fgcolor="#F44336">Incorrect.</font></string>
+    <string name="reveal_button_text">Reveal</string>
+
+    <string name="enter_four_digits"><font fgcolor="#EEDFD0">Please enter a 4 digit combination.</font></string>
+    <string name="enter_valid_entry"><font fgcolor="#EEDFD0">Please enter a valid entry.</font></string>
+    <string name="revealed_answer_feedback"><font fgcolor="#F44336">You revealed the correct answer manually.</font></string>
+
+
+    <string name="one_entry_correct"><font fgcolor="#F0810F">One number and its location correct.</font></string>
+    <string name="two_entries_correct"><font fgcolor="#F0810F">Two numbers and their locations correct.</font></string>
+    <string name="three_entries_correct"><font fgcolor="#F0810F">Three numbers and their locations correct.</font></string>
 </resources>
