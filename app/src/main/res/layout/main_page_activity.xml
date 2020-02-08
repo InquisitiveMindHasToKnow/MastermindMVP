@@ -2,11 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="org.ohmstheresistance.mastermindmvp.activities.mainpage.MainPagePresenter" />
+
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".activities.activities.MainPageActivity">
+    tools:context=".activities.mainpage.MainPageActivity">
 
 
     <TextView
@@ -123,6 +131,7 @@
             android:fontFamily="@font/autour_one"
             android:paddingStart="32dp"
             android:paddingEnd="32dp"
+            android:onClick="@{presenter::handleGoToMastermindGameClick}"
             android:text="@string/play_now_button_text"
             android:textAllCaps="false"
             android:textColor="@color/textColor"
@@ -136,6 +145,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:layout_marginTop="12dp"
+            android:onClick="@{presenter::handleGoToMasterMindGameInstructionsClick}"
             android:text="@string/game_rules_text"
             android:textAllCaps="false"
             android:textColor="@color/textColor"
