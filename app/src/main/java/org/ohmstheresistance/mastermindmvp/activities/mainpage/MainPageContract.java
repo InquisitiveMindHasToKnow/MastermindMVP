@@ -4,17 +4,17 @@ import android.view.View;
 
 public interface MainPageContract {
 
-    interface MastermindView {
+    interface MainPageView {
 
         void showMastermindGame();
 
         void showMasterMindInstructions();
     }
 
-    interface MastermindPresenter{
+    interface MainPagePresenter{
 
-        void handleGoToMastermindGameClick(View view);
+        void handleMainPagePlayNowClick(View view);
 
-        void handleGoToMasterMindGameInstructionsClick(View view);
+        void handleMainPageInstructionsClick(View view);
     }
 }
