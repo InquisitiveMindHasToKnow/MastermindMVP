@@ -47,4 +47,4 @@
                 android:text=" 1"/>
 
         </LinearLayout>
-    </>
+</androidx.cardview.widget.CardView>
