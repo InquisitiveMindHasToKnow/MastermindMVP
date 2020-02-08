@@ -1,6 +1,8 @@
 package org.ohmstheresistance.mastermindmvp.activities.instructions;
 
 
+import android.view.View;
+
 public class MastermindInstructionsPresenter implements MastermindInstructionsContract.MastermindInstructionPresenter {
 
     private MastermindInstructionsContract.MastermindInstructionsView mastermindInstructionsView;
@@ -10,12 +12,13 @@ public class MastermindInstructionsPresenter implements MastermindInstructionsCo
    }
 
     @Override
-    public void handleInstructionsPlayNowClick() {
+    public void handleInstructionsPlayNowClick(View view) {
         mastermindInstructionsView.playNow();
     }
 
     @Override
-    public void handleInstructionsGotItClick() {
+    public void handleInstructionsGotItClick(View view) {
        mastermindInstructionsView.dismissDialog();
     }
+
 }
