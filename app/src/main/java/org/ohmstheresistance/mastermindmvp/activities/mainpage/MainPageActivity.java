@@ -5,16 +5,15 @@ import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import org.ohmstheresistance.mastermindmvp.R;
+import org.ohmstheresistance.mastermindmvp.activities.instructions.MastermindInstructions;
 import org.ohmstheresistance.mastermindmvp.activities.mastermindgame.MastermindGameActivity;
 import org.ohmstheresistance.mastermindmvp.databinding.MainPageActivityBinding;
 
 public class MainPageActivity extends AppCompatActivity implements MainPageContract.MainPageView {
 
     private MainPagePresenter mainPagePresenter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +29,13 @@ public class MainPageActivity extends AppCompatActivity implements MainPageContr
         Intent navigationIntent = new Intent(MainPageActivity.this, MastermindGameActivity.class);
         startActivity(navigationIntent);
         overridePendingTransition(0, 0);
-
-       // Toast.makeText(this, "Entered Mastermind Game!", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showMasterMindInstructions() {
 
-        Toast.makeText(this, "Displaying Mastermind Game Instructions!", Toast.LENGTH_LONG).show();
+        MastermindInstructions mastermindInstructions = new MastermindInstructions();
+        mastermindInstructions.show(getSupportFragmentManager(), "MastermindInstructionsDialog");
 
     }
 }

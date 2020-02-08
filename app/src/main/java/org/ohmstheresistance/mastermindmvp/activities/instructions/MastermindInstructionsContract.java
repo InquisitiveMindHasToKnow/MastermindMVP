@@ -1,5 +1,7 @@
 package org.ohmstheresistance.mastermindmvp.activities.instructions;
 
+import android.view.View;
+
 public class MastermindInstructionsContract {
 
     interface MastermindInstructionsView{
@@ -11,8 +13,8 @@ public class MastermindInstructionsContract {
 
     interface MastermindInstructionPresenter{
 
-        void handleInstructionsPlayNowClick();
+        void handleInstructionsPlayNowClick(View view);
 
-        void handleInstructionsGotItClick();
+        void handleInstructionsGotItClick(View view);
     }
 }
