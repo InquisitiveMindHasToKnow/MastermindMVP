@@ -11,7 +11,7 @@ import org.ohmstheresistance.mastermindmvp.R;
 import org.ohmstheresistance.mastermindmvp.activities.mastermindgame.MastermindGameActivity;
 import org.ohmstheresistance.mastermindmvp.databinding.MainPageActivityBinding;
 
-public class MainPageActivity extends AppCompatActivity implements MainPageContract.MastermindView {
+public class MainPageActivity extends AppCompatActivity implements MainPageContract.MainPageView {
 
     private MainPagePresenter mainPagePresenter;
 
@@ -27,7 +27,6 @@ public class MainPageActivity extends AppCompatActivity implements MainPageContr
 
     @Override
     public void showMastermindGame() {
-
         Intent navigationIntent = new Intent(MainPageActivity.this, MastermindGameActivity.class);
         startActivity(navigationIntent);
         overridePendingTransition(0, 0);

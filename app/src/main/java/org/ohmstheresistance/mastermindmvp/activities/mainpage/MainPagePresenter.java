@@ -2,22 +2,22 @@ package org.ohmstheresistance.mastermindmvp.activities.mainpage;
 
 import android.view.View;
 
-public class MainPagePresenter implements MainPageContract.MastermindPresenter {
+public class MainPagePresenter implements MainPageContract.MainPagePresenter {
 
-    private MainPageContract.MastermindView mastermindView;
+    private MainPageContract.MainPageView mastermindView;
 
-    public MainPagePresenter(MainPageContract.MastermindView view){
+     MainPagePresenter(MainPageContract.MainPageView view){
         mastermindView = view;
 
     }
 
     @Override
-    public void handleGoToMastermindGameClick(View view) {
+    public void handleMainPagePlayNowClick(View view) {
         mastermindView.showMastermindGame();
     }
 
     @Override
-    public void handleGoToMasterMindGameInstructionsClick(View view) {
+    public void handleMainPageInstructionsClick(View view) {
         mastermindView.showMasterMindInstructions();
     }
 }
